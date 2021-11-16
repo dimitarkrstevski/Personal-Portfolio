@@ -3,11 +3,13 @@
     padding: 0;
     font-family: sans-serif;
     justify-content: center;
+    scroll-behavior: smooth;
+
     
 }
 
 .me{
-    position: relative;
+    position:fixed
     width: 100%;
     height: 100vh;
     background:lightgray;
@@ -31,8 +33,6 @@ nav ul li{
     display:inline-block;
     list-style: none;
     margin:  10px 20px;
-    
-     
 
 }
 
@@ -64,6 +64,7 @@ nav ul li a:hover{
     margin: auto;
     color: black;
     font-family: sans-serif;
+    font-size: 19px;
 }
 
 .abm h3{
@@ -75,16 +76,37 @@ nav ul li a:hover{
     border-color: dodgerblue;
     border-width: 5px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px; 
 }
+
 
 .abm legend{
     text-align: center;
 }
 
+.abm ul{
+    padding-left: 30%;
+}
+
+.abm ul li{
+    font-size: 20px;
+}
+
+.abm a{
+    color:dodgerblue;
+    font-size: 20px;
+    margin: 170px ;  
+}
+.abm a:hover{ 
+    color: #0463ac;
+     cursor: pointer;
+ }
+
+
+
 .ct ul{
     position: absolute;
-    top:200%;
+    top:190%;
     left:50%;
     padding: 40%;
     margin-top: 10%;
@@ -121,7 +143,7 @@ nav ul li a:hover{
 }
 
 .contact-info{  
-    margin-top: 55%;
+    margin-top: 27%;
     margin-left: 40%;
     margin-right: 25%;
     font-family: sans-serif;
@@ -134,6 +156,7 @@ nav ul li a:hover{
 
 .contact-info i{
     font-size: 25px;
+
 }
 
 .contact-form{
@@ -192,3 +215,35 @@ nav ul li a:hover{
 .contact-form .sendbtn:hover{
     background: #0463ac;
 }
+
+.topbtn {
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color:dodgerblue;
+}
+
+.topbtn:hover{
+
+    cursor: pointer;
+    transform: translate(0,-2px);
+    color: #0463ac;
+}
+
+.anketa {
+    
+    text-align: center;
+    margin-top: 6%;
+        
+}
+.anketa a{
+    color: dodgerblue;
+}
+ .anketa a:hover{
+     color: #0463ac;
+ }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="galerystyle.css">
+</head>
+<body>
+    <h1>Welcome to my Gallery</h1>
+
+    <div class="full-img" id="fullimgbox">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div> 
+
+    <div class="gallery" >
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\1.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\2.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\7.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\5.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\3.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\4.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\8.jpg" onclick="openfullimg(this.src)">
+        <img src="C:\Users\User\Desktop\oweb proekt\oweb\9.jpg" onclick="openfullimg(this.src)">
+    </div>
+
+<script>
+    var fullimgbox=document.getElementById("fullimgbox");
+    var fullimg=document.getElementById("fullimg");
+
+    function openfullimg(pic){
+
+        fullimgbox.style.display="flex";
+        fullimg.src=pic;
+
+
+    }
+
+    function closefullimg() {
+        fullimgbox.style.display="none";
+    }
+
+
+
+</script>
+
+<h3>  <a href="proekt.html">click here to go back to my web site </a>  </h3>
+
+</body>
+</html>
