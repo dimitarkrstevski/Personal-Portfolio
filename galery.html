@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Gallery</title>
     <link rel="stylesheet" href="galerystyle.css">
+    <script src="galery.js">
+
+    </script>
 </head>
 <body>
     <h1>Welcome to my Gallery</h1>
@@ -26,6 +29,7 @@
         <img src="9.jpg" onclick="openfullimg(this.src)">
     </div>
 
+
 <script>
     var fullimgbox=document.getElementById("fullimgbox");
     var fullimg=document.getElementById("fullimg");
@@ -34,18 +38,34 @@
 
         fullimgbox.style.display="flex";
         fullimg.src=pic;
-
-
     }
 
     function closefullimg() {
         fullimgbox.style.display="none";
     }
-
-
-
 </script>
-<script src="galery.js"></script>
+
+
+
+<div class="myDiv">
+    <body>
+        
+        <button class="button" onclick="incrementButton()">Like</button>
+        <span id="incrementText">0</span>
+    </body>
+</div>
+<script>
+function incrementButton(){
+    var element = document.getElementById('incrementText')
+    var value = element.innerHTML;
+ 
+    ++value;
+ 
+    console.log(value)
+    document.getElementById('incrementText').innerHTML = value;
+  }
+</script>
+
 
 <h3>  <a href="proekt.html">click here to go back to my web site </a>  </h3>
 

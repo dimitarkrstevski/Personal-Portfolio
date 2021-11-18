@@ -84,3 +84,37 @@ h3 a:hover{
     cursor: pointer;
 }
 
+
+.button{
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border:2px solid white;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 122px;
+    cursor: pointer;
+    border-radius: 4px;
+    
+    
+    
+    
+}
+.button:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.myDiv{
+    text-align: center;
+ 
+
+}
+.myDiv span{
+    color: dodgerblue;
+    font-size: 30px;
+    
+    
+}
