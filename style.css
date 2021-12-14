@@ -4,124 +4,67 @@
     font-family: sans-serif;
     justify-content: center;
     scroll-behavior: smooth;
+      /* overflow-x: hidden;   */
 
     
 }
-
-.me{
-    position:fixed
-    width: 100%;
-    height: 100vh;
-    background:lightgray;
+body {
+    background-color: lightgray !important;
 }
 
-nav{
-    display: flex;
-    width: 90%;
-    margin:auto;
-    padding: 20px 0;
-    align-items:center;
-    justify-content:space-between;
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.m-20{
+    margin-top: 13rem;
+    margin-bottom: 13rem;
 }
 
 .logo{
     max-width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
-nav ul li{
-    display:inline-block;
-    list-style: none;
-    margin:  10px 20px;
-
+.fa{
+    font-size: 50px;
 }
-
-nav ul li a{
-    cursor:pointer;
-    color:cornflowerblue;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-    color:dodgerblue;
-}
-
-.detel{
-    margin-left: 50%;
-    margin-top: 15%;
-}
-
-.imgs img{
-
-    height: 250px;
-    border-radius: 50%;
-    margin-left: 30%;
-    margin-top: -180px;
-}
-
-.abm{
-    width: 600px;
-    margin: auto;
-    color: black;
-    font-family: sans-serif;
-    font-size: 19px;
-}
-
-.abm h3{
-    font-size: 30px;
-    color:dodgerblue;
-}
-
-.abm fieldset{
-    border-color: dodgerblue;
-    border-width: 5px;
-    border-radius: 8px;
-    padding: 20px; 
-}
-
-
-.abm legend{
+#about{
+    color: #007bff;
     text-align: center;
+    font-weight: bold;
+    margin-top: 23%;
+    font-size: 2.5rem;
 }
 
-.abm ul{
-    padding-left: 30%;
-}
+ p{
+    font-size: 24px;
+    color:black;
+    font-family: sans-serif;
 
-.abm ul li{
-    font-size: 20px;
 }
-
-.abm a{
-    color:dodgerblue;
-    font-size: 20px;
-    margin: 170px ;  
-}
-.abm a:hover{ 
-    color: #0463ac;
-     cursor: pointer;
- }
 
 
 
 .ct ul{
     position: absolute;
-    top:190%;
+    top:257%;
     left:50%;
     padding: 40%;
-    margin-top: 10%;
+    margin-top: -10%;
     transform: translate(-50%,-50%);
     display: flex;
 }
 
 .ct ul li{
     list-style: none;
-    margin: 0 15px;
+     margin: 10px 15px; 
 }
 
 .ct ul li .fa{
     font-size: 30px;
-    line-height: 60px;
+    line-height: 45px;
     transition: .6s;
     color: cornflowerblue;
 }
@@ -129,8 +72,9 @@ nav ul li a:hover{
 .ct ul li a{
     position: relative;
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
+    padding-top: 10px;
     border-radius: 50%;
     background-color: white;
     text-align: center;
@@ -143,7 +87,7 @@ nav ul li a:hover{
 }
 
 .contact-info{  
-    margin-top: 27%;
+    margin-top: 25%;
     margin-left: 40%;
     margin-right: 25%;
     font-family: sans-serif;
@@ -156,11 +100,12 @@ nav ul li a:hover{
 
 .contact-info i{
     font-size: 25px;
-
 }
 
 .contact-form{
     margin-right: 70%;
+    margin-top: -35%;
+    margin-bottom: 0%;
 }
 
 .contact-form h2{
@@ -168,8 +113,8 @@ nav ul li a:hover{
     text-align: center;
     font-size: 23px;
     text-transform: uppercase;
-    margin-top: 40%;
-    margin-bottom: 10%;
+    margin-top: 100%;
+    margin-bottom: -5%;
 }
 
 .contact-form .text-box {
@@ -180,6 +125,7 @@ nav ul li a:hover{
     border-radius: 8px;
     box-shadow: 0 1px 1px rgb(0,0,0,0.1);
     margin-bottom: 20px;
+    margin-top: -40%;
     opacity: 0.9;
 }
 
@@ -203,13 +149,14 @@ nav ul li a:hover{
     background:dodgerblue;
     color:white;
     width: 100px;
-    height: 30px;
+    height: 40px;
     font-size: 20px;
     letter-spacing: 2px;
     border-radius: 8px;
     cursor: pointer;
     text-transform: lowercase;
     margin-bottom: 50px;
+    
 }
 
 .contact-form .sendbtn:hover{
@@ -218,14 +165,15 @@ nav ul li a:hover{
 
 .topbtn {
     position:fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
     right: 50px;
     text-align: center;
-    line-height: 50px;
+    line-height: 20px;
     border-radius: 50%;
     color:dodgerblue;
+
 }
 
 .topbtn:hover{
@@ -234,16 +182,3 @@ nav ul li a:hover{
     transform: translate(0,-2px);
     color: #0463ac;
 }
-
-.anketa {
-    
-    text-align: center;
-    margin-top: 6%;
-        
-}
-.anketa a{
-    color: dodgerblue;
-}
- .anketa a:hover{
-     color: #0463ac;
- }

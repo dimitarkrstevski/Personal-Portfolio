@@ -8,111 +8,128 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
 
 
 
 </head>
-<body style="background-color: lightgray;">
-    <div id="home"class="me">
-         <nav>
-             <img src="Dk Logo.png" class="logo">
-             <ul>
-                 <li> <a href="#home ",href="#topbtn"> HOME </a></li>
-                  <li> <a href="#aboutme ",href="#topbtn"> ABOUT ME </a></li>
-                  <li> <a href="#contact "> CONTACT </a></li>
-             </ul>        
-         </nav>
+<body>
+    
 
-         <hr>
-         <div class="detel">
-             <h1>Hi, I am <span style="color: dodgerblue;"> Dimitar </span>  </h1>
-             <p> <h3> I create simple  & functional
-                 <br> <span style="color: dodgerblue;">windows applications</span> and <span style="color: dodgerblue;">websites </span> 
-                 <br> for small businesses.</h3>
-             </p>
+
+         <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbarscroll">
+                <a class="navbar-brand" href="#"><img src="Dk Logo.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                          My works
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="galery.html">My Galery</a>
+                          <a class="dropdown-item" href="#">My Blog</a>
+                          </div>
+                      </li>
+                      
+                
+                </ul>
+                </div>
+              </nav>
          </div>
-         <div class="imgs">
-             <img src="29665507_1659454354138510_7957759042473887445_o.jpg" class="img">
 
+         <div class="container-fluid m-20" id="home">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-4">
+                         <img width="250px" height="150px" src="./29665507_1659454354138510_7957759042473887445_o.jpg" alt="" class="img-thumbnail rounded-circle">
+                     </div>
+                     <div class="col-6 py-4">
+                        <h1>Hi, I am <span class="text-primary"> Dimitar </span>  </h1>
+                        <p> <h3> I create simple  & functional
+                            <br> <span class="text-primary">windows applications</span> and <span class="text-primary">websites </span> 
+                            <br> for small businesses.</h3>
+                        </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <div class="container-fluid m-20">
+             <div class="container pt-5">
+                 <div class="row pt-5">
+                     <div class="col-6 py-5">
+                        <h2 id="about" class="pt-5">About Me </h2>
+                            
+                            <hr color="black">
+                          
+                            <p> I am 22 years old student living in Tetovo, Macedonia <br>
+                                I study at the Faculty of Electrical Engineering and Information Technologies in Skopje. <br>
+                                I went to the high school SOUG Kiril Pejcinovic in Tetovo. <br>
+                                I spend my free time mostly researching and learning about electronics and auto mechanics. <br>
+                                For more informations about me, visit my <a href="galery.html">Galery</a> and my <a href="blog.html">Blog</a>.
+                               <br>  If you want to help me to improve my website, please fill out the following <a href="anketa.html">Survey</a>.
+                            </p> 
+                            
+                               
+                     </div>
+                 </div>
+             </div>
          </div>
          
-        
-    </div>
 
-    <div id="aboutme" class="abm" >
-        <fieldset >
-            <legend >
-                <h3 > <b>About Me</b></h3>
-            </legend>
-            <p>  I am 22 years old student living in Tetovo, Macedonia
-                <br> I study at the Faculty of Electrical Engineering and Information Technologies in Skopje.
-                <br> I went to the high school SOUG Kiril Pejcinovic in Tetovo.
-                <br> I spend my free time mostly researching and learning about electronics and auto mechanics.
+                <div class="ct" id="contact">
+                    <ul>
+                        <li> <a href="https://www.facebook.com/krstevski13/"> <i class="fa fa-facebook"> </i> </a> </li>
+                        <li> <a href="https://www.instagram.com/krstevski13/"> <i class="fa fa-instagram"> </i> </a> </li>
+                        <li> <a href="https://www.linkedin.com/in/dimitar-krstevski-8708a0224/"> <i class="fa fa-linkedin"> </i> </a> </li>
+                        <li> <a href="https://www.skype.com "> <i class="fa fa-skype"> </i> </a> </li>
+                    </ul>
+            
+            
+                    <div  class="contact-info " >
+                        <div><i class="fa fa-map-marker"></i> Gjoce Simovski 16 Tetovo, Macedonia</div>
+                        <div><i class="fa fa-envelope"></i> dimitarkrstevski13@gmail.com</div>
+                        <div><i class="fa fa-phone"></i> 070-960-143</div>
+                     
+                        <div class="mb-5">
+            
+                        <div  class="contact-form m-20">
+                        <h2  class="py-5">Contact Me</h2>
+                        <form class="contactme" action="" method="post">
+                            <input type="text" name="name" class="text-box" placeholder="Name" required>
+                            <input type="email" name="email" class="text-box" placeholder="E-mail Adress" required>
+                            <textarea name="Message" rows="5" placeholder="Write a message..." required></textarea>
+                            <input type="submit" name="sumbit" class="sendbtn" value="send"> 
+                        </form>
+                        <a class="topbtn" href="#"><i class="fa fa-arrow-up"></i></a>
                 
-               </p> 
-        </fieldset>
-        <a href="galery.html">Click here to visit my gallery</a> <!--Zosto ne funkcionira kogaj e staeno na kraj!?-->
-        <fieldset>
-            <legend>
-                <h3> Food</h3>
-            </legend>
-            <ul>
-                <li>Pizza</li>
-                <li>Burgers</li>
-                <li>Pasta</li>
-                
-            </ul>
-        </fieldset>
-        
-        <fieldset>
-            <legend>
-                <h3> Music</h3>
-            </legend>
-            <ul>
-                <li>Red Hot Chilli Papers</li>
-                <li>Green Day</li>
-                <li>Station: Innermost</li>
-                <li>Bon Jovi</li>
-            </ul>
-        </fieldset>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
-    </div>
+            
 
 
-
-    <div id="contact" class="ct">
-        <ul>
-            <li> <a href="https://www.facebook.com/krstevski13/"> <i class="fa fa-facebook"> </i> </a> </li>
-            <li> <a href="https://www.instagram.com/krstevski13/"> <i class="fa fa-instagram"> </i> </a> </li>
-            <li> <a href="https://www.linkedin.com/in/dimitar-krstevski-8708a0224/"> <i class="fa fa-linkedin"> </i> </a> </li>
-            <li> <a href="https://www.skype.com "> <i class="fa fa-skype"> </i> </a> </li>
-        </ul>
-
-
-        <div  class="contact-info">
-            <div><i class="fa fa-map-marker"></i> Gjoce Simovski 16 Tetovo, Macedonia</div>
-            <div><i class="fa fa-envelope"></i> dimitarkrstevski13@gmail.com</div>
-            <div><i class="fa fa-phone"></i> 070-960-143</div>
-
-            <div  class="contact-form">
-            <h2>Contact Me</h2>
-            <form class="contactme" action="" method="post">
-                <input type="text" name="name" class="text-box" placeholder="Name" required>
-                <input type="email" name="email" class="text-box" placeholder="E-mail Adress" required>
-                <textarea name="Message" rows="5" placeholder="Write a message..." required></textarea>
-                <input type="submit" name="sumbit" class="sendbtn" value="send"> 
-            </form>
-            <a class="topbtn" href="#"><i class="fa fa-arrow-up"></i></a>
-    
-        </div>
-        </div>
-    </div>
-    
-    <div class="anketa">
-    <a href="anketa.html">Please take a moment to fill out the survey below.
-        <br> Your input will help me to improve my web page</a>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -6,68 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Gallery</title>
     <link rel="stylesheet" href="galerystyle.css">
-    <script src="galery.js">
-
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Welcome to my Gallery</h1>
+<body class="bg-dark">
 
-    <div class="full-img" id="fullimgbox">
-        <img src="1.jpg" id="fullimg">
-        <span onclick="closefullimg()">X</span>
-    </div> 
 
-    <div class="gallery" >
-        <img src="1.jpg" onclick="openfullimg(this.src)">
-        <img src="2.jpg" onclick="openfullimg(this.src)">
-        <img src="7.jpg" onclick="openfullimg(this.src)">
-        <img src="5.jpg" onclick="openfullimg(this.src)">
-        <img src="3.jpg" onclick="openfullimg(this.src)">
-        <img src="4.jpg" onclick="openfullimg(this.src)">
-        <img src="8.jpg" onclick="openfullimg(this.src)">
-        <img src="9.jpg" onclick="openfullimg(this.src)">
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col">
+                <h1 class="text-center" > Welcome to my Galery</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class=" mx-auto my-3">
+                    <img src="1.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like1"  class="btn btn-primary " >Like <span id="like1N">0</span></button>
+                    <button id="comment1" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post1" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-<script>
-    var fullimgbox=document.getElementById("fullimgbox");
-    var fullimg=document.getElementById("fullimg");
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="2.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like2"  class="btn btn-primary " >Like <span id="like2N">0</span></button>
+                    <button id="comment2" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post2" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
-    function openfullimg(pic){
 
-        fullimgbox.style.display="flex";
-        fullimg.src=pic;
-    }
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="3.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like3"  class="btn btn-primary " >Like <span id="like3N">0</span></button>
+                    <button id="comment3" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post3" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 
-    function closefullimg() {
-        fullimgbox.style.display="none";
-    }
-</script>
+
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="4.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like4"  class="btn btn-primary " >Like <span id="like4N">0</span></button>
+                    <button id="comment4" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post4" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-<div class="myDiv">
-    <body>
-        
-        <button class="button" onclick="incrementButton()">Like</button>
-        <span id="incrementText">0</span>
-    </body>
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="5.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like5"  class="btn btn-primary " >Like <span id="like5N">0</span></button>
+                    <button id="comment5" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post5" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="7.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like7"  class="btn btn-primary " >Like <span id="like7N">0</span></button>
+                    <button id="comment7" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post7" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="8.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like8"  class="btn btn-primary " >Like <span id="like8N">0</span></button>
+                    <button id="comment8" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post8" cols="30" rows="10"></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto my-3">
+                    <img src="9.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </div>
+            <div class="row" id="dk">
+                <div class="col-6 mx-auto my-3">
+                    <button id="like9"  class="btn btn-primary " >Like <span id="like9N">0</span></button>
+                    <button id="comment9" class="btn btn-secondary">Comment</button>
+                    <form action="">
+                        <input name="" id="post9" cols="30" rows="10" ></input>
+                    </form>
+                    <div class="col-6 mx-auto">
+                        
+                        <div id="allComments9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+  
+
+<div class="wb"> 
+<h3>   <a href="proekt.html">Go Back to my WebSite </a>  </h3>
 </div>
-<script>
-function incrementButton(){
-    var element = document.getElementById('incrementText')
-    var value = element.innerHTML;
- 
-    ++value;
- 
-    console.log(value)
-    document.getElementById('incrementText').innerHTML = value;
-  }
-</script>
+<script src="./galery.js"></script>
 
-
-<h3>  <a href="proekt.html">click here to go back to my web site </a>  </h3>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
