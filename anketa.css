@@ -44,17 +44,18 @@ h1{
 
 .rowtab{
     display: block;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     padding-right: 20%;
     
 
 }
 .labeltab{
     display: inline-block;
-    width:44%;
+    width:45%;
     text-align: right;
     vertical-align: top;
     padding: 2px;
+    
     
 }
 
@@ -71,3 +72,9 @@ h1{
     text-align: left;
     padding: 5px;
 }
+.abc{
+    text-align: center;
+}
+
+
+

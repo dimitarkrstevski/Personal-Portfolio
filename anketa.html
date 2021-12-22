@@ -13,105 +13,66 @@
        <h1>Survey Form</h1> 
     
 
+      
+           <div class="container-fluid">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-6 offset-3">
 
-    <section>
-    <div class="prv">
-        <div id="description">
-            <p> Let me know how to improve my website</p>
-        </div>
-
-        <form id="anketa-forma">
-          <div class="rowtab">
-            <div class="labeltab">
-                <label>Name</label>
-            </div>
-            <div class="inputtab">
-                <input type="text" name="Name">
-            </div>
-        </div>
-
-        <div class="rowtab">
-            <div class="labeltab">
-                <label>Email</label>
-            </div>
-            <div class="inputtab">
-                <input type="email" name="Email">
-            </div>
-        </div>
-
-        <div class="rowtab">
-            <div class="labeltab">
-                <label>Age</label>
-            </div>
-            <div class="inputtab">
-                <input type="number" name="Age">
-            </div>
-        </div>
-
-
-        <div class="row-tab">
-            <div class="labeltab">
-                <label>How likely is that you would recommend this webstie to a friend? </label>
-            </div>
-            <div class="inputtab">
-                <div>
-                <input type="radio" name="rate" value="Perfect">
-                <label>Definetly</label>
-                </div>
-                <div>
-                <input type="radio" name="rate" value="Good">
-                <label>Maybe</label>
-                </div>
-                <div>
-                <input type="radio" name="rate" value="Not Bad">
-                <label>Not sure</label>
-                </div>
-            </div>
-        </div>
-
-            <div class="rowtab">
-                <div class="labeltab">
-                    <label>
-                        Which part of the website did you like the most?
-                    </label>
-                </div>
-                <div class="selecttab">
-                    <select>
-                        <option>Select</option>
-                        <option>Home</option>
-                        <option>About Me</option>
-                        <option>Gallery</option>
-                        <option>Contact Me</option>
-                    </select>
-                </div>
-            </div>
+                       
+                <form>
             
-            <div class="rowtab">
-                <div class="labeltab">
-                    <label>Rate this website</label>
-                </div>
-                <div class="inputtab">
-                    <input type="radio" name="rate" value="Perfect">
-                    <label>Perfect</label>
+        <div class="form-group ">
+          <label for="exampleFormControlInput1">E-mail adress:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">How would you rate our website?</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Which part of the website did you like the most?</label>
+          <select class="form-control">
+            <option>Home</option>
+            <option>Galery</option>
+            <option>Blog</option>
+            <option>About Me</option>
+            <option>Contact Me</option>
+          </select>
+      </div>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Do you have any comments on this section?</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Which part of the website did you not like?</label>
+            <select class="form-control">
+                <option>Home</option>
+                <option>Galery</option>
+                <option>Blog</option>
+                <option>About Me</option>
+                <option>Contact Me</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Do you have any idea how we can improve the website?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
 
-                    <input type="radio" name="rate" value="Good">
-                    <label>Good</label>
-
-                    <input type="radio" name="rate" value="Not Bad">
-                    <label>Not Bad</label>
-
-                    <input type="radio" name="rate" value="Terrible">
-                    <label>Terrible</label>
-
-
-                    
-
-                </div>
-            </div>
-        </form>
+      </form>
     </div>
-    </section>
 
-
+</div>
+      </div>
+    </div>
 </body>
 </html>
