@@ -1,176 +1,99 @@
-
-
-let like1 = document.getElementById("like1")
-let cnt1 = 0;
-
-like1.addEventListener("click",function(){
-  let like1N = document.getElementById("like1N");
-
-  cnt1+=1;
-  like1N.innerText = cnt1;
-})
-
-let comment1 = document.getElementById("comment1")
-
-comment1.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post1 = document.getElementById("post1").value
-
-  document.getElementById("allComments1").innerHTML += post1 + "<br>";
-})
-
-
-
-
-let like2 = document.getElementById("like2")
-let cnt2 = 0;
-
-like2.addEventListener("click",function(){
-  let like2N = document.getElementById("like2N");
-
-  cnt2+=1;
-  like2N.innerText = cnt2;
-})
-
-let comment2 = document.getElementById("comment2")
-
-comment2.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post2 = document.getElementById("post2").value
-
-  document.getElementById("allComments2").innerHTML += post2 + "<br>";
-})
-
-
-
-let like3 = document.getElementById("like3")
-let cnt3 = 0;
-
-like3.addEventListener("click",function(){
-  let like3N = document.getElementById("like3N");
-
-  cnt3+=1;
-  like3N.innerText = cnt3;
-})
-
-let comment3 = document.getElementById("comment3")
-
-comment3.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post3 = document.getElementById("post3").value
-
-  document.getElementById("allComments3").innerHTML += post3 + "<br>";
-})
-
-
-let like4 = document.getElementById("like4")
-let cnt4 = 0;
-
-like4.addEventListener("click",function(){
-  let like4N = document.getElementById("like4N");
-
-  cnt4+=1;
-  like4N.innerText = cnt4;
-})
-
-let comment4 = document.getElementById("comment4")
-
-comment4.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post4 = document.getElementById("post4").value
-
-  document.getElementById("allComments4").innerHTML += post4 + "<br>";
-})
-
-
-
-let like5 = document.getElementById("like5")
-let cnt5 = 0;
-
-like5.addEventListener("click",function(){
-  let like5N = document.getElementById("like5N");
-
-  cnt5+=1;
-  like5N.innerText = cnt5;
-})
-
-let comment5 = document.getElementById("comment5")
-
-comment5.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post5 = document.getElementById("post5").value
-
-  document.getElementById("allComments5").innerHTML += post5 + "<br>";
-})
-
-
-
-let like7 = document.getElementById("like7")
-let cnt7 = 0;
-
-like7.addEventListener("click",function(){
-  let like7N = document.getElementById("like7N");
-
-  cnt7+=1;
-  like7N.innerText = cnt7;
-})
-
-let comment7 = document.getElementById("comment7")
-
-comment7.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post7 = document.getElementById("post7").value
-
-  document.getElementById("allComments7").innerHTML += post7 + "<br>";
-})
-
-
-
-let like8 = document.getElementById("like8")
-let cnt8 = 0;
-
-like8.addEventListener("click",function(){
-  let like8N = document.getElementById("like8N");
-
-  cnt8+=1;
-  like8N.innerText = cnt8;
-})
-
-let comment8 = document.getElementById("comment8")
-
-comment8.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post8 = document.getElementById("post8").value
-
-  document.getElementById("allComments8").innerHTML += post8 + "<br>";
-})
-
-
-
-
-let like9 = document.getElementById("like9")
-let cnt9 = 0;
-
-like9.addEventListener("click",function(){
-  let like9N = document.getElementById("like9N");
-
-  cnt9+=1;
-  like9N.innerText = cnt9;
-})
-
-let comment9 = document.getElementById("comment9")
-
-comment9.addEventListener("click",function(e){
-  e.preventDefault();
-
-  let post9 = document.getElementById("post9").value
-
-  document.getElementById("allComments9").innerHTML += post9 + "<br>";
-})
+let imgarray=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','7.jpg','8.jpg','9.jpg']
+
+let render=document.getElementById("images");
+
+for(let i=0; i<imgarray.length;i++){
+  let img =  imgarray[i].replace(/.[^/.]+$/, "");
+  render.innerHTML+=` <div class="row">
+  <div class=" col-6 mx-auto my-3">
+      <img src="${imgarray[i]}" onclick="openfullimg(this.src)">
+  </div>
+</div>
+<div class="row" >
+  <div class="col-6 mx-auto my-3">
+      <button id="like${img}"  class="btn btn-primary likeBTN">Like <span ></span></button>
+      <button  class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#img${img}">Comment</button>
+      <div class="col-6 mx-auto">        
+          <div id="allComments${img}">
+                   
+          </div>
+      </div>
+  </div>
+</div>`
+}
+
+let modals = document.getElementById('modals');
+
+for (let i = 0; i < imgarray.length; i++){
+  let img =  imgarray[i].replace(/.[^/.]+$/, "");
+  modals.innerHTML += `<div class="modal fade" id="img${img}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add comment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id = "comments">
+        <label for="name">Name</label> 
+        <input hidden type = "text" value = "${img}">
+        <input type="text" id = "name${img}"><br>
+        <label for = "comment">Comment</label>
+        <textarea id="comment${img}"></textarea>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id = "save${img}" onclick = 'store()'>Save</button>
+      </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>`
+}
+
+
+function appendToStorage(name, data) {
+  let old = localStorage.getItem(name);
+  if (old === null) {
+    old = "";
+    localStorage.setItem(name, '<p>' + data + '</p>');
+  } else {
+    localStorage.setItem( name, old + '<p>' + data + '</p>');
+  }
+}
+
+function store() {
+
+  for (let i = 0; i < imgarray.length; i++){
+    let img = imgarray[i].replace(/.[^/.]+$/, "");
+    let name = document.getElementById(`name${img}`).value;
+    let comment = document.getElementById(`comment${img}`).value;
+    appendToStorage(`comment${img}`, name + '  ' + comment); 
+  }
+}
+
+var likes = 0;
+
+
+
+
+for (let i = 0; i < imgarray.length; i++) {
+  let img = imgarray[i].replace(/.[^/.]+$/, "");
+  document.getElementById(`allComments${img}`).innerHTML += `<span>${localStorage.getItem(`comment${img}`)}</span>`;
+  
+}
+
+
+const likesBtn = [...document.querySelectorAll('.likeBTN')];
+const likesCnt = new Array(likesBtn.length);
+
+likesBtn.forEach((el, i) => {
+  likesCnt[i] = localStorage.getItem(`${likesBtn[i].id}`);;
+  el.addEventListener('click', function () {
+     el.textContent = ++likesCnt[i];
+    localStorage.setItem(`${likesBtn[i].id}`, likesCnt[i]);
+  } 
+   
+  );
+});

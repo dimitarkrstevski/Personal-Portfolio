@@ -1,68 +1,68 @@
 
  img{
-     width: 650px;
-     height: 350px;
- }
+    width: 650px;
+    height: 350px;
+}
 
 h1{
-    color: white;
-    text-transform: uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+   color: white;
+   text-transform: uppercase;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;    
 }
- 
+
 h3{
-    text-transform:lowercase;
-    text-align: right;
-    margin-right: 15px;
+   text-transform:lowercase;
+   text-align: right;
+   margin-right: 15px;
 }
 
 .wb a{
-    color: #25272a;
-    text-transform:lowercase;
+   color:slategray;
+   text-transform:lowercase;
 }
 
 
 .wb a:hover{
-    color:white;
-    
+   color:white;
+   
 } 
 
 
 #allComments1{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments2{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments3{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments4{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments5{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments5{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments7{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments8{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 #allComments9{
-    color: white;
-    font-size: 25px;
+   color: white;
+   font-size: 25px;
 }
 
 
